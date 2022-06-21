@@ -15,3 +15,7 @@ module.exports = function (context, map, meta) {
   this.callback(null, context, map, meta)
   return
 }
+
+module.exports.pitch = function (remainingRequest, precedingRequest, data) {
+  console.log("do somethings test1");
+}

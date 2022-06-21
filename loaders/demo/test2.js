@@ -5,3 +5,8 @@ module.exports = function (context, map, meta) {
     callback(null, context, map, meta)
   }, 1000)
 }
+
+module.exports.pitch = function (remainingRequest, precedingRequest, data) {
+  console.log("do somethings test2");
+  return '111'
+}
