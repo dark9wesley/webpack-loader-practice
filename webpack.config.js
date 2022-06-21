@@ -10,9 +10,18 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.js$/,
+      //   use: './loaders/test-loader.js'
+      // },
       {
         test: /\.js$/,
-        use: './loaders/test-loader.js'
+        use: [
+          './loaders/demo/test1',
+          './loaders/demo/test2',
+          './loaders/demo/test3',
+          './loaders/demo/test4',
+        ]
       }
     ],
   },
