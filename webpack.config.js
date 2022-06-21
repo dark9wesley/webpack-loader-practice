@@ -10,7 +10,10 @@ module.exports = {
   },
   module: {
     rules: [
-
+      {
+        test: /\.js$/,
+        use: './loaders/test-loader.js'
+      }
     ],
   },
   plugins: [
