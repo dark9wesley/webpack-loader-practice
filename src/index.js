@@ -1,5 +1,5 @@
 console.log('hello world');
-import img from './assets/hejp.png'
+import './index.css'
 
 const sum = (...args) => {
   return args.reduce((acc, cur) => acc + cur, 0);

@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
     clean: true,
+    publicPath: '/dist'
   },
   module: {
     rules: [
@@ -44,6 +45,12 @@ module.exports = {
       {
         test: /\.(png|jpe?g|svg|gif)$/i,
         loader: './loaders/file-loader',
+        type: 'javascript/auto',
+      },
+      {
+        test: /\.css$/,
+        // use: ['style-loader', 'css-loader']
+        use: ['./loaders/style-loader', 'css-loader']
       }
     ],
   },
