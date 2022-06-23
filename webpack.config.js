@@ -14,14 +14,18 @@ module.exports = {
       //   test: /\.js$/,
       //   use: './loaders/test-loader.js'
       // },
+      // {
+      //   test: /\.js$/,
+      //   use: [
+      //     './loaders/demo/test1',
+      //     './loaders/demo/test2',
+      //     './loaders/demo/test3',
+      //     './loaders/demo/test4',
+      //   ]
+      // }
       {
         test: /\.js$/,
-        use: [
-          './loaders/demo/test1',
-          './loaders/demo/test2',
-          './loaders/demo/test3',
-          './loaders/demo/test4',
-        ]
+        use: ['./loaders/clean-log-loader']
       }
     ],
   },
