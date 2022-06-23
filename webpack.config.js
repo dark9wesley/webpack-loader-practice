@@ -25,7 +25,15 @@ module.exports = {
       // }
       {
         test: /\.js$/,
-        use: ['./loaders/clean-log-loader']
+        use: [
+          './loaders/clean-log-loader',
+          {
+            loader: './loaders/banner-loader',
+            options: {
+              author: 'pengyw',
+            }
+          }
+        ]
       }
     ],
   },
