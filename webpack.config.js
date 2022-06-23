@@ -32,6 +32,12 @@ module.exports = {
             options: {
               author: 'pengyw',
             }
+          },
+          {
+            loader: './loaders/babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            }
           }
         ]
       }
